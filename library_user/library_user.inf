@@ -1,0 +1,19 @@
+[Defines]
+  INF_VERSION                    = 1.25
+  BASE_NAME                      = LibraryUser
+  FILE_GUID                      = 22a1f57c-21ca-4011-9133-e3df0d01dace
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = UefiMain
+
+[Sources]
+  library_user.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  HelloPkg/Hello.dec
+
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiLib
+  Hello_Library

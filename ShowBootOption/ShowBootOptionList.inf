@@ -1,0 +1,24 @@
+##
+# Copyright (c) 2021, Konstantin Aladyshev <aladyshev22@gmail.com>
+#
+# SPDX-License-Identifier: MIT
+##
+
+[Defines]
+  INF_VERSION                    = 1.25
+  BASE_NAME                      = ShowBootOptionList
+  FILE_GUID                      = 31266d12-9c60-478e-905e-05d117a3a9df
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = ShellCEntryLib
+
+[Sources]
+  ShowBootOptionList.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiLib
+  ShellCEntryLib

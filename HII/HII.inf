@@ -1,0 +1,17 @@
+[Defines]
+  INF_VERSION                    = 1.25
+  BASE_NAME                      = HII
+  FILE_GUID                      = 1671a850-2111-42b8-a633-f57191380054
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = UefiMain
+[Sources]
+  HII.c
+[Packages]
+  MdePkg/MdePkg.dec
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiLib
+
+[Protocols]
+  gEfiHiiDatabaseProtocolGuid

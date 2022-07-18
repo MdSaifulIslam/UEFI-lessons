@@ -1,0 +1,25 @@
+[Defines]
+  DEC_SPECIFICATION              = 0x00010005
+  PACKAGE_NAME                   = HelloPkg
+  PACKAGE_GUID                   = 7e7edbba-ca2c-4177-a3f0-d3371358773a
+  PACKAGE_VERSION                = 1.01
+
+[Includes]
+  Include
+
+[LibraryClasses]
+
+[Guids]
+  gHelloWorldFileGuid            = {0xe65a210d, 0xe270, 0x4ba0, {0x92, 0x95, 0xb7, 0x05, 0xce, 0x2e, 0x70, 0xb0}}
+  gUefiLessonsPkgTokenSpaceGuid = {0x150cab53, 0xad47, 0x4385, {0xb5, 0xdd, 0xbc, 0xfc, 0x76, 0xba, 0xca, 0xf0}}
+[Protocols]
+  gSimpleClassProtocolGuid = { 0xb5510eea, 0x6f11, 0x4e4b, { 0xad, 0x0f, 0x35, 0xce, 0x17, 0xbd, 0x7a, 0x67 }}
+
+[PcdsFeatureFlag]
+
+[PcdsFixedAtBuild]
+  gUefiLessonsPkgTokenSpaceGuid.PcdMyVar32|42|UINT32|0x00000001
+  gUefiLessonsPkgTokenSpaceGuid.PcdMyVar32_1|40|UINT32|0x00000002
+  gUefiLessonsPkgTokenSpaceGuid.PcdMyVar32_2|29|UINT32|0x00000003
+
+[PcdsFixedAtBuild, PcdsPatchableInModule, PcdsDynamic, PcdsDynamicEx]

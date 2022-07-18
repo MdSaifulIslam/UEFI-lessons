@@ -1,0 +1,22 @@
+[Defines]
+  INF_VERSION                    = 1.25
+  BASE_NAME                      = pcd
+  FILE_GUID                      = 8c1a6b71-0c4b-4497-aaad-07404edf142c
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = UefiMain
+
+[Sources]
+  pcd.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  HelloPkg/Hello.dec  
+
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiLib
+
+[FixedPcd]
+  gUefiLessonsPkgTokenSpaceGuid.PcdMyVar32 
+  gUefiLessonsPkgTokenSpaceGuid.PcdMyVar32_1|33
