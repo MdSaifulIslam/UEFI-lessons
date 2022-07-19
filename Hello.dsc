@@ -23,7 +23,7 @@
   HelloPkg/library_user/library_user.inf
   HelloPkg/ClassProtocol/class_protocol.inf
   HelloPkg/ClassUser/class_user.inf
-  HelloPkg/HII/HII.inf
+  HelloPkg/ShowHII/ShowHII.inf
 
 [LibraryClasses]
   UefiApplicationEntryPoint|MdePkg/Library/UefiApplicationEntryPoint/UefiApplicationEntryPoint.inf
