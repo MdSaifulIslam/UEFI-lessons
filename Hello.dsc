@@ -24,6 +24,7 @@
   HelloPkg/ClassProtocol/class_protocol.inf
   HelloPkg/ClassUser/class_user.inf
   HelloPkg/ShowHII/ShowHII.inf
+  HelloPkg/HIIStringsC/HIIStringsC.inf
 
 [LibraryClasses]
   UefiApplicationEntryPoint|MdePkg/Library/UefiApplicationEntryPoint/UefiApplicationEntryPoint.inf

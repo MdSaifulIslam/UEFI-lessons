@@ -1,0 +1,23 @@
+[Defines]
+  INF_VERSION                    = 1.25
+  BASE_NAME                      = HIIStringsC
+  FILE_GUID                      = a32c8426-1253-4535-9e75-f8ce2cbeae80
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = UefiMain
+
+[Sources]
+  HIIStringsC.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  HelloPkg/Hello.dec
+  MdeModulePkg/MdeModulePkg.dec
+
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiLib
+  UefiHiiServicesLib
+
+[Guids]
+  gHIIStringsCGuid

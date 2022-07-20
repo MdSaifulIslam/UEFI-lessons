@@ -1,0 +1,17 @@
+[Defines]
+  INF_VERSION                    = 1.25
+  BASE_NAME                      = HIIStringsUNI
+  FILE_GUID                      = e33a5acd-eee0-415e-a992-80525c4c2181
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = UefiMain
+
+[Sources]
+  HIIStringsUNI.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiLib
